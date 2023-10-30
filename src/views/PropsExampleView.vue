@@ -3,7 +3,6 @@
     <h1>Props example</h1>
     <div>
       <Greeting name="John" />
-      <Greeting name="name" />
       <Greeting :name="name" />
       <Greeting v-bind:name="name" />
     </div>
