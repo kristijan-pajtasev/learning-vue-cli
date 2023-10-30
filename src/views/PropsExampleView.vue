@@ -2,7 +2,10 @@
   <div class="about">
     <h1>Props example</h1>
     <div>
-      <Greeting />
+      <Greeting name="John" />
+      <Greeting name="name" />
+      <Greeting :name="name" />
+      <Greeting v-bind:name="name" />
     </div>
   </div>
 </template>
@@ -19,6 +22,9 @@
 <script>
 import Greeting from "../components/Greeting.vue";
 export default {
-  components: {Greeting}
+  components: {Greeting},
+  data() {
+    return { name: "John" }
+  }
 }
 </script>
