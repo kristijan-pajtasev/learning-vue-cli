@@ -1,6 +1,9 @@
 <template>
   <div class="about">
     <h1>Props example</h1>
+    <div>
+      <Greeting />
+    </div>
   </div>
 </template>
 
@@ -13,3 +16,9 @@
   }
 }
 </style>
+<script>
+import Greeting from "../components/Greeting.vue";
+export default {
+  components: {Greeting}
+}
+</script>
