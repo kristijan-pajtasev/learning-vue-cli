@@ -1,3 +1,4 @@
+<!--Child component-->
 <template>
   <div>
     <button type="button" @click="handleClick">Click</button>

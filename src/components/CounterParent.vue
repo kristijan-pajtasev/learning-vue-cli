@@ -1,3 +1,4 @@
+<!--Parent component-->
 <template>
   <div>
     <div>Number of clicks: {{counter}}</div>
