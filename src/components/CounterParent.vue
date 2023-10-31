@@ -2,7 +2,7 @@
 <template>
   <div>
     <div>Number of clicks: {{counter}}</div>
-    <CounterButton></CounterButton>
+    <CounterButton v-on:increment-counter="increment"></CounterButton>
   </div>
 </template>
 
@@ -15,6 +15,10 @@ export default {
       counter: 0
     }
   },
-  methods: {}
+  methods: {
+    increment() {
+      this.counter++;
+    }
+  }
 }
 </script>
