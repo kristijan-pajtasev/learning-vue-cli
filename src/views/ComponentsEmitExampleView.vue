@@ -1,12 +1,5 @@
 <template>
-  <div class="about">
-    <h1>Props example</h1>
-    <div>
-      <Greeting name="John" />
-      <Greeting :name="name" />
-      <Greeting v-bind:name="name" />
-    </div>
-  </div>
+  <CounterParent />
 </template>
 
 <style>
@@ -19,18 +12,12 @@
 }
 </style>
 <script>
-import Greeting from "../components/Greeting.vue";
+import CounterParent from "../components/CounterParent.vue";
 export default {
-  components: {Greeting},
+  components: {CounterParent},
   data() {
-    return { name: "John" }
   },
   mounted() {
-    const _this = this;
-    setTimeout(() => {
-      _this.name = "Jane"
-    }, 3000)
-    console.log("mounted")
   }
 }
 </script>
