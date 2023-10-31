@@ -24,6 +24,13 @@ export default {
   components: {Greeting},
   data() {
     return { name: "John" }
+  },
+  mounted() {
+    const _this = this;
+    setTimeout(() => {
+      _this.name = "Jane"
+    }, 3000)
+    console.log("mounted")
   }
 }
 </script>
