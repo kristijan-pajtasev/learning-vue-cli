@@ -16,6 +16,7 @@ import CounterParent from "../components/CounterParent.vue";
 export default {
   components: {CounterParent},
   data() {
+    return {}
   },
   mounted() {
   }
