@@ -12,7 +12,7 @@ export default {
   },
   methods: {
     handleClick() {
-      this.$emit("increment-counter")
+      this.$emit("increment-counter");
     }
   }
 }
