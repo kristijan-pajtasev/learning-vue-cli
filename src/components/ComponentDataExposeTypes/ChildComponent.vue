@@ -15,6 +15,11 @@
       <div>first: {{firstComputedMethod}}</div>
       <div>second: {{secondComputedMethod}}</div>
     </div>
+    <div>
+      <div>Watch</div>
+      <div>first: {{firstWatch}}</div>
+      <div>second: {{secondWatch}}</div>
+    </div>
   </div>
 </template>
 
@@ -53,7 +58,11 @@ export default {
   watch: {
     firstCounter () {
       console.log("first counter watch")
-      this.first = this.$props.firstCounter
+      this.firstWatch = this.$props.firstCounter
+    },
+    secondCounter () {
+      console.log("second counter watch")
+      this.secondWatch = this.$props.secondCounter
     }
   }
 }
