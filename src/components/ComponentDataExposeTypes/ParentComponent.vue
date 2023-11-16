@@ -1,6 +1,5 @@
 <template>
   <div>
-    parent
     <div>{{firstCounter}}</div>
     <div>{{secondCounter}}</div>
     <ChildComponent :firstCounter="firstCounter" :secondCounter="secondCounter" />
