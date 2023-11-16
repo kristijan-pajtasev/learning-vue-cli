@@ -26,6 +26,8 @@ export default {
     return {
       first: firstCounter,
       second: secondCounter,
+      firstWatch: firstCounter,
+      secondWatch: secondCounter,
     }
   },
   methods: {
@@ -46,6 +48,12 @@ export default {
     secondComputedMethod() {
       console.log("secondComputedMethod")
       return this.$props.secondCounter
+    }
+  },
+  watch: {
+    firstCounter () {
+      console.log("first counter watch")
+      this.first = this.$props.firstCounter
     }
   }
 }
