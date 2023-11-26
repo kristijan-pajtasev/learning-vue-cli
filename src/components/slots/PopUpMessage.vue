@@ -1,6 +1,8 @@
 <template>
   <div>
-    <div>PopUp Message</div>
+    <div>
+      <slot name="header"></slot>
+    </div>
     <slot></slot>
   </div>
 </template>

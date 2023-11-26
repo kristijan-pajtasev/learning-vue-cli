@@ -2,6 +2,7 @@
   <div class="about">
     <h1>Slots example</h1>
     <PopUpMessage>
+      <template v-slot:header>PopUp message header</template>
       <template v-slot>Content</template>
     </PopUpMessage>
   </div>
