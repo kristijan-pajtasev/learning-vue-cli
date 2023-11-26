@@ -2,7 +2,7 @@
   <div class="about">
     <h1>Slots example</h1>
     <PopUpMessage>
-      Content
+      <template v-slot>Content</template>
     </PopUpMessage>
   </div>
 </template>
