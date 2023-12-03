@@ -2,11 +2,11 @@
   <ul>
     <li v-for="item in listItems" :key="item.id">
       <div>
-        <slot v-if="$slots.title" name="title"></slot>
+        <slot v-if="$slots.title" name="title" :title="item.title"></slot>
         <div v-else>{{item.title}}</div>
       </div>
       <div>
-        <slot v-if="$slots.default" name="default"></slot>
+        <slot v-if="$slots.default" name="default" :description="item.description"></slot>
         <div v-else>{{item.description}}</div>
       </div>
     </li>

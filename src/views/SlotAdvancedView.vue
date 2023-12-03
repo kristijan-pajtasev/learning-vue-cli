@@ -2,8 +2,8 @@
   <div class="about">
     <h1>Slots advanced example</h1>
     <ListWithSlots :items="items" >
-      <template #title>title</template>
-      <template #default>description</template>
+      <template #title="titleProps">{{ titleProps.title}}</template>
+      <template #default="defaultProps">{{ defaultProps.description }}</template>
     </ListWithSlots>
 
     <ListWithSlots :items="items" />
