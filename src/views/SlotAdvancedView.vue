@@ -5,6 +5,8 @@
       <template #title>title</template>
       <template #default>description</template>
     </ListWithSlots>
+
+    <ListWithSlots :items="items" />
   </div>
 </template>
 
