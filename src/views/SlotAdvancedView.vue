@@ -1,10 +1,9 @@
 <template>
   <div class="about">
-    <h1>Slots example</h1>
-    <PopUpMessage>
-      <template #header>PopUp message header</template>
-      <template #default>Content</template>
-    </PopUpMessage>
+    <h1>Slots advanced example</h1>
+    <ListWithSlots>
+
+    </ListWithSlots>
   </div>
 </template>
 
@@ -13,9 +12,9 @@
 }
 </style>
 <script>
-import PopUpMessage from '../components/slots/PopUpMessage.vue'
+import ListWithSlots from '../components/slots/ListWithSlots.vue'
 export default {
-  components: {PopUpMessage},
+  components: {ListWithSlots},
   data() {
     return {  }
   },
