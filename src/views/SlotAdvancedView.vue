@@ -1,7 +1,10 @@
 <template>
   <div class="about">
     <h1>Slots advanced example</h1>
-    <ListWithSlots :items="items" />
+    <ListWithSlots :items="items" >
+      <template #title>title</template>
+      <template #default>description</template>
+    </ListWithSlots>
   </div>
 </template>
 

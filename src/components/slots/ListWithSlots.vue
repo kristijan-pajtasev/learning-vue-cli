@@ -1,6 +1,13 @@
 <template>
   <ul>
-    <li v-for="item in listItems">List item</li>
+    <li v-for="item in listItems" :key="item.id">
+      <div>
+        <slot name="title"></slot>
+      </div>
+      <div>
+        <slot name="default"></slot>
+      </div>
+    </li>
   </ul>
 </template>
 
